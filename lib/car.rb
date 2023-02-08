@@ -14,4 +14,9 @@ class Car
   def model
     @make_model.split[1]
   end
+
+  def total_cost
+    total_cost = monthly_payment * @loan_length
+    total_cost
+  end
 end
